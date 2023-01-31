@@ -1,0 +1,12 @@
+#footer .MuiPaper-root {
+    background: inherit;
+    color: inherit;
+}
+
+#footer .MuiTypography-root {
+    color: inherit;
+}
+
+#footer #placeholder {
+    text-align: center;
+}
