@@ -7,6 +7,7 @@ function Agenda() {
 
     return (
         <Box id="agenda">
+        AGENDA
         </Box>
     );
 

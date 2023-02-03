@@ -7,6 +7,7 @@ function Rsvp() {
 
     return (
         <Box id="rsvp">
+        RSVP
         </Box>
     );
 

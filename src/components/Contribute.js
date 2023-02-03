@@ -7,6 +7,7 @@ function Contribute() {
 
     return (
         <Box id="contribute">
+        CONTRIBUTE
         </Box>
     );
 

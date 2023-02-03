@@ -7,7 +7,7 @@ function Home() {
 
     return (
         <Box id="home">
-            
+            HOME
         </Box>
     );
 
