@@ -12,7 +12,7 @@ function Home() {
                     <Box sx={{ objectFit: 'contain', maxWidth: 300 }} component="img" src="/static/love.jpg" />
                 </Grid>
                 <Grid item>
-                    <Typography variant="h5">Sara & Stefano</Typography>
+                    <Typography variant="h5" >Sara & Stefano</Typography>
                 </Grid>
                 <Grid item>
                     <Typography variant="h5">9 settembre 2023</Typography>
@@ -21,7 +21,7 @@ function Home() {
                     <Typography variant="h5">Sesto Calende, Varese, Italia</Typography>
                 </Grid>
                 <Grid item>
-                    <Button sx={{background:'#b86570', color:'#ffffff'}}>RSVP</Button>
+                    <Button variant="contained" disableElevation>RSVP</Button>
                 </Grid>
             </Grid>
         </Box>
