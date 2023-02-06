@@ -1,4 +1,5 @@
-import { Box, Paper, Typography } from '@mui/material';
+import CodeIcon from '@mui/icons-material/Code';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 
 import './Footer.css';
@@ -6,10 +7,9 @@ import './Footer.css';
 function Footer() {
 
     return (
-        <Box id="footer">
-            <Paper elevation={0} square >
-                <Typography id="placeholder">PLACEHOLDER</Typography>
-            </Paper>
+        <Box id="footer" padding={5} justifyContent="center" display="flex">
+            <CodeIcon fontSize='small' sx={{ marginRight: 1 }} />
+            <Typography id="placeholder" variant='caption'>Developed by us.</Typography>
         </Box>
     );
 

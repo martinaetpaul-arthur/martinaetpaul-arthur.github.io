@@ -1,11 +1,10 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
+import { Grid } from '@mui/material';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import Toolbar from '@mui/material/Toolbar';
+import * as React from 'react';
 
-import './Header.css'
+import './Header.css';
 
 function Header({ pages, currentPage, setPage }) {
 
@@ -17,9 +16,12 @@ function Header({ pages, currentPage, setPage }) {
 
     return (
         <Box id="header">
-            <AppBar position="static">
-                <Container maxWidth="xl">
-                    <Toolbar disableGutters>
+            <Grid container justifyContent="space-evenly">
+                <Grid item xs={1} justifyContent="center" display="flex">
+                    <Box sx={{height:64, }} component="img" src="/static/logo.png" />
+                </Grid>
+                <Grid item xs={10}>
+                    <Toolbar sx={{ justifyContent: "center" }} >
                         <Box>
                             {pages.map((page) => (
                                 <Button
@@ -33,8 +35,9 @@ function Header({ pages, currentPage, setPage }) {
                             )}
                         </Box>
                     </Toolbar>
-                </Container>
-            </AppBar>
+                </Grid>
+                <Grid item xs={1}></Grid>
+            </Grid>
         </Box>
     );
 }
