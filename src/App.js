@@ -33,8 +33,8 @@ function App() {
       <Box>
         <Header
           pages={['Home', 'Agenda', 'Contribute', 'Rsvp']}
-          currentPage={page}
-          setPage={setPage}
+          onHomeClick={() => setPage('Home')}
+          onMenuClick={p => setPage(p)}
         />
 
         {
