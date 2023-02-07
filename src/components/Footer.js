@@ -2,8 +2,6 @@ import CodeIcon from '@mui/icons-material/Code';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 
-import './Footer.css';
-
 function Footer() {
 
     return (

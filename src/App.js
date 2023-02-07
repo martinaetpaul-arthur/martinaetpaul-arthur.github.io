@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Box, createTheme, CssBaseline, ThemeProvider } from '@mui/material';
-import './App.css';
 import { Agenda, Contribute, Footer, Header, Home, Rsvp } from './components';
 
 const theme = createTheme({
