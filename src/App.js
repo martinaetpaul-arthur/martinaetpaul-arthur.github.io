@@ -1,5 +1,5 @@
+import { Box, createTheme, CssBaseline, Stack, ThemeProvider } from '@mui/material';
 import * as React from 'react';
-import { Box, createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import { Agenda, Contribute, Footer, Header, Home, Rsvp } from './components';
 
 const theme = createTheme({
@@ -15,10 +15,7 @@ const theme = createTheme({
     fontFamily: [
       'Roboto',
       '"Dancing Script"',
-    ].join(','),
-    h5: {
-      fontFamily: ['"Dancing Script"']
-    }
+    ].join(',')
   },
 });
 
@@ -29,35 +26,35 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box>
+      <Stack minHeight="100vh" direction="column" justifyContent="space-between" alignItems="stretch" >
         <Header
           pages={['Home', 'Agenda', 'Contribute', 'Rsvp']}
           onHomeClick={() => setPage('Home')}
           onMenuClick={p => setPage(p)}
         />
+        <Box display="flex" flexGrow={1} justifyContent="center">
+          {
+            page === 'Home' &&
+            <Home onRsvpClick={() => setPage('Rsvp')} />
+          }
 
-        {
-          page === 'Home' &&
-          <Home />
-        }
+          {
+            page === 'Agenda' &&
+            <Agenda />
+          }
 
-        {
-          page === 'Agenda' &&
-          <Agenda />
-        }
+          {
+            page === 'Contribute' &&
+            <Contribute />
+          }
 
-        {
-          page === 'Contribute' &&
-          <Contribute />
-        }
-
-        {
-          page === 'Rsvp' &&
-          <Rsvp />
-        }
-
+          {
+            page === 'Rsvp' &&
+            <Rsvp />
+          }
+        </Box>
         <Footer />
-      </Box>
+      </Stack>
     </ThemeProvider>
   );
 }
