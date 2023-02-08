@@ -26,7 +26,7 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                     <MenuIcon />
                 </IconButton>
 
-                <Box sx={{ display: { xs: 'none', md: 'flex' }, height: 48, cursor: 'pointer' }} onClick={onHomeClick} component="img" src="/static/logo.png" />
+                <Box sx={{ display: { xs: 'none', md: 'flex' }, height: 64, cursor: 'pointer' }} onClick={onHomeClick} component="img" src="/static/logo.png" />
                 <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems="center" display="flex">
                     {pages.map((page) => (
                         <Button
