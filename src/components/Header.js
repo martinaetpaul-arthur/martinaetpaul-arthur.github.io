@@ -23,11 +23,8 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                             <MenuIcon />
                         </IconButton>
                     </Grid>
-                    <Grid item xs={2} sx={{ display: { xs: 'flex', md: 'none' } }} justifyContent="center">
-                        <Box sx={{ height: 64 }} component="img" src="/static/logo.png" />
-                    </Grid>
 
-                    <Grid item md={1} sx={{ display: { xs: 'none', md: 'flex' }, }}>
+                    <Grid item xs={2} md={1} sx={{ display: { xs: 'none', md: 'flex' }, }}>
                         <Box sx={{ height: 64, cursor: 'pointer' }} onClick={onHomeClick} component="img" src="/static/logo.png" />
                     </Grid>
                     <Grid item md={10} sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
