@@ -31,7 +31,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Locale.Provider value={{ locale, setLocale }}>
         <CssBaseline />
-        <Container>
+        <Container maxWidth={false}>
           <Stack minHeight="100vh" justifyContent="space-between" alignItems="stretch" >
             <Header
               pages={['Home', 'Agenda', 'Contribute', 'Rsvp']}
