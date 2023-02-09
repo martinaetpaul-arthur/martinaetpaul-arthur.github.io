@@ -38,6 +38,7 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                             <Button
                                 key={page}
                                 onClick={() => onMenuClick(page)}
+                                size="large"
                             >
                                 {page}
                             </Button>
