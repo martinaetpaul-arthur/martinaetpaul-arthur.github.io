@@ -61,7 +61,7 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                 open={open}
                 onClose={() => setOpen(false)}
             >
-                <Box width={'70vw'}>
+                <Box width={'70vw'} maxWidth={300}>
                     <List>
                         {pages.map((page) => (
                             <Box>
