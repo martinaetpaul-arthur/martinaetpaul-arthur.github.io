@@ -1,7 +1,8 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import { Drawer, Grid, IconButton, Switch, Typography } from '@mui/material';
+import { Divider, Drawer, Grid, IconButton, List, ListItem, Switch, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import { Container } from '@mui/system';
 import * as React from 'react';
 
 import { Locale } from './Locale.js';
@@ -15,6 +16,8 @@ function Header({ pages, onMenuClick, onHomeClick }) {
         event.target.checked ? setLocale('en') : setLocale('it');
     }
 
+    const Logo = ({ clickable }) => (<Box sx={{ height: 64, cursor: clickable ? 'pointer' : 'auto' }} onClick={clickable ? () => onHomeClick() : null} component="img" src="/static/logo.png" />);
+
     return (
         <Box id="header" component="header" >
             <Grid container height={64} columns={{ xs: 4, md: 12 }} justifyContent="space-between">
@@ -25,11 +28,11 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                 </Grid>
 
                 <Grid item xs={2} sx={{ display: { xs: 'flex', md: 'none' } }} justifyContent="center" >
-                    <Box sx={{ height: 64, cursor: 'pointer' }} onClick={onHomeClick} component="img" src="/static/logo.png" />
+                    <Logo clickable />
                 </Grid>
 
                 <Grid item md={1} sx={{ display: { xs: 'none', md: 'flex ' } }} justifyContent="left" >
-                    <Box sx={{ height: 64, cursor: 'pointer' }} onClick={onHomeClick} component="img" src="/static/logo.png" />
+                    <Logo clickable />
                 </Grid>
                 <Grid item md={10} sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
 
@@ -42,8 +45,8 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                             >
                                 {page}
                             </Button>
-                        )
-                        )}
+                        ))
+                        }
                     </Box>
                 </Grid>
 
@@ -58,15 +61,29 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                 open={open}
                 onClose={() => setOpen(false)}
             >
-                {pages.map((page) => (
-                    <Button
-                        key={page}
-                        onClick={() => onMenuClick(page)}
-                    >
-                        {page}
-                    </Button>
-                )
-                )}
+                <Box width={'70vw'}>
+                    <List>
+                        {pages.map((page) => (
+                            <Box>
+                                <ListItem>
+                                    <Button
+                                        key={page}
+                                        onClick={() => {
+                                            onMenuClick(page);
+                                            setOpen(false);
+                                        }}
+                                    >
+                                        {page}
+                                    </Button>
+                                </ListItem>
+                                <Container><Divider /></Container>
+                            </Box>
+                        )
+                        )}
+                    </List>
+                </Box>
+
+                <Container sx={{ display: 'flex', justifyContent: 'center' }}><Logo /></Container>
             </Drawer>
         </Box>
     );
