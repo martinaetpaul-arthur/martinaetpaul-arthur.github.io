@@ -15,7 +15,7 @@ function Footer() {
                 </Grid>
                 <Grid item >
                     <Typography fontFamily='Roboto' padding={1} variant='caption' display="flex">
-                        <Link href="https://github.com/stebielli/wedding" color="inherit" underline="hover" display="flex" >
+                        <Link href="https://github.com/saraestefano/saraestefano.github.io" color="inherit" underline="hover" display="flex" >
                             <GitHubIcon fontSize='small' sx={{ marginRight: 1 }} />
                             Code on GitHub.
                         </Link>
