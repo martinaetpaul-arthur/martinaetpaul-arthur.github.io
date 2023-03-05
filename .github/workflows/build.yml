@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: wedding
-          path: /build
+          path: build
         
       
   # Deploy job
