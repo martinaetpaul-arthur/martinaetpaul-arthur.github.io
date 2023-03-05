@@ -18,12 +18,10 @@ jobs:
       - run: npm install
       - run: npm run build
       
-      - run: tar -cvzf build.tar.gz ./build
-      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: build.tar.gz
+          path: ./build
         
       
   # Deploy job
