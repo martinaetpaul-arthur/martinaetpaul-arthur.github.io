@@ -18,6 +18,12 @@ jobs:
       - run: npm install
       - run: npm run build
       
+      - name: Upload artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: wedding
+          path: /build
+        
       
   # Deploy job
   deploy:
