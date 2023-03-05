@@ -7,19 +7,19 @@ function Home({ onRsvpClick }) {
         <Box id="home">
             <Grid container direction="column" justifyContent="space-between" alignItems="center" rowSpacing={2}>
                 <Grid item>
-                    <Box sx={{ objectFit: 'contain', maxWidth: 300 }} component="img" src="/static/love.jpg" />
+                    <Box sx={{ objectFit: 'contain', maxWidth: { xs: 300, sm: 350 } }} component="img" src="/static/love.png" />
                 </Grid>
                 <Grid item>
-                    <Typography fontFamily="Dancing Script" variant="h5" >Sara & Stefano</Typography>
+                    <Typography padding={1} textAlign='center' variant='h4' fontWeight='Bold' >Sara - Stefano</Typography>
+                    <Typography textAlign='center' variant='h6'>9 settembre 2023</Typography>
+                    <Typography textAlign='center' variant='h6'>Sesto Calende, Varese, Italia</Typography>
                 </Grid>
                 <Grid item>
-                    <Typography fontFamily="Dancing Script" variant="h5">9 settembre 2023</Typography>
-                </Grid>
-                <Grid item>
-                    <Typography fontFamily="Dancing Script" variant="h5">Sesto Calende, Varese, Italia</Typography>
-                </Grid>
-                <Grid item>
-                    <Button onClick={onRsvpClick} variant="contained" disableElevation>RSVP</Button>
+                    <Button onClick={onRsvpClick} variant="contained" disableElevation>
+                        <Typography fontFamily='Roboto'>
+                            RSVP
+                        </Typography>
+                    </Button>
                 </Grid>
             </Grid>
         </Box>

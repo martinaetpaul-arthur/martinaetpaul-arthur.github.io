@@ -1,5 +1,6 @@
 import { Box, Container, createTheme, CssBaseline, Stack, ThemeProvider } from '@mui/material';
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Agenda, Contribute, Footer, Header, Home, Rsvp } from './components';
 import { Locale } from './components/Locale';
 
@@ -13,49 +14,50 @@ const theme = createTheme(
         main: '#b86570'
       }
     },
+
     typography: {
       fontFamily: [
+        '"Josefin Slab", serif',
         'Roboto',
-        '"Dancing Script"',
-      ].join(',')
+      ].join(','),
     },
   }
 );
 
-function App() {
 
-  const [page, setPage] = React.useState('Home');
+function App({page}) {
+
+  const navigate = useNavigate();
   const [locale, setLocale] = React.useState('it')
 
   return (
     <ThemeProvider theme={theme}>
       <Locale.Provider value={{ locale, setLocale }}>
         <CssBaseline />
-        <Container maxWidth={false}>
+        <Container maxWidth="xl">
           <Stack minHeight="100vh" justifyContent="space-between" alignItems="stretch" >
             <Header
-              pages={['Home', 'Agenda', 'Contribute', 'Rsvp']}
-              onHomeClick={() => setPage('Home')}
-              onMenuClick={p => setPage(p)}
+              pages={['home', 'agenda', 'contribute', 'rsvp']}
+              home='home'
             />
             <Box display="flex" flexGrow={1} justifyContent="center">
               {
-                page === 'Home' &&
-                <Home onRsvpClick={() => setPage('Rsvp')} />
+                page === 'home' &&
+                <Home onRsvpClick={() => navigate('/rsvp')} />
               }
 
               {
-                page === 'Agenda' &&
+                page === 'agenda' &&
                 <Agenda />
               }
 
               {
-                page === 'Contribute' &&
+                page === 'contribute' &&
                 <Contribute />
               }
 
               {
-                page === 'Rsvp' &&
+                page === 'rsvp' &&
                 <Rsvp />
               }
             </Box>

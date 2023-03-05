@@ -4,11 +4,13 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { Container } from '@mui/system';
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { Locale } from './Locale.js';
 
-function Header({ pages, onMenuClick, onHomeClick }) {
+function Header({ pages, home }) {
 
+    const navigate = useNavigate();
     const { setLocale } = React.useContext(Locale);
     const [open, setOpen] = React.useState(false);
 
@@ -16,7 +18,7 @@ function Header({ pages, onMenuClick, onHomeClick }) {
         event.target.checked ? setLocale('en') : setLocale('it');
     }
 
-    const Logo = ({ clickable }) => (<Box sx={{ height: 64, cursor: clickable ? 'pointer' : 'auto' }} onClick={clickable ? () => onHomeClick() : null} component="img" src="/static/logo.png" />);
+    const Logo = ({ clickable }) => (<Box sx={{ height: 64, cursor: clickable ? 'pointer' : 'auto' }} onClick={clickable ? () => navigate(home) : null} component="img" src="/static/logo.png" />);
 
     return (
         <Box id="header" component="header" >
@@ -40,10 +42,12 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                         {pages.map((page) => (
                             <Button
                                 key={page}
-                                onClick={() => onMenuClick(page)}
+                                onClick={() => navigate('/' + page)}
                                 size="large"
                             >
-                                {page}
+                                <Typography fontFamily='Roboto'>
+                                    {page}
+                                </Typography>
                             </Button>
                         ))
                         }
@@ -51,9 +55,9 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                 </Grid>
 
                 <Grid item xs={1} alignItems="center" justifyContent="right" display="flex">
-                    <Typography color="primary">IT</Typography>
+                    <Typography fontFamily='Roboto' color="primary">IT</Typography>
                     <Switch onChange={updateLocale} size="small" />
-                    <Typography color="primary">EN</Typography>
+                    <Typography fontFamily='Roboto' color="primary">EN</Typography>
                 </Grid>
             </Grid>
             <Drawer
@@ -69,11 +73,13 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                                     <Button
                                         key={page}
                                         onClick={() => {
-                                            onMenuClick(page);
+                                            navigate('/' + page);
                                             setOpen(false);
                                         }}
                                     >
-                                        {page}
+                                        <Typography fontFamily='Roboto'>
+                                            {page}
+                                        </Typography>
                                     </Button>
                                 </ListItem>
                                 <Container><Divider /></Container>
@@ -82,8 +88,6 @@ function Header({ pages, onMenuClick, onHomeClick }) {
                         )}
                     </List>
                 </Box>
-
-                <Container sx={{ display: 'flex', justifyContent: 'center' }}><Logo /></Container>
             </Drawer>
         </Box>
     );
