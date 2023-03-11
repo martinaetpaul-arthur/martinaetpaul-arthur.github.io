@@ -1,0 +1,29 @@
+{
+    "pages": {
+        "home": "home",
+        "agenda": "agenda",
+        "rsvp": "rsvp",
+        "giftRegistry": "gift registry"
+    },
+    "home": {
+        "saraStefano": "Sara - Stefano",
+        "weddingDate": "9th September, 2023",
+        "weddingDirection": "Sesto Calende, Varese, Italia"
+    },
+    "agenda": {
+        "weddingDay": "Our wedding day",
+        "weddingDate": "9th September, 2023",
+        "saveTheDate1": "Save the date.",
+        "saveTheDate2": "It’s a Saturday!",
+        "ceremony": "Ceremony",
+        "ceremonyTime": "h 15:30",
+        "ceremonyDirection1": "Abbazia di San Donato",
+        "ceremonyDirection2": "Via S. Donato, 6",
+        "ceremonyDirection3": "Sesto Calende (VA)",
+        "reception": "Reception",
+        "receptionTime": "h 17:00",
+        "receptionDirection1": "Tenuta Aquasole",
+        "receptionDirection2": "Via Fornace, 498/1",
+        "receptionDirection3": "Mercallo (VA)" 
+    }
+}

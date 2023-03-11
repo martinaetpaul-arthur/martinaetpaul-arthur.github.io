@@ -7,13 +7,19 @@ import * as React from 'react';
 
 import { Locale } from './Locale.js';
 
-function Header({ pages, home, navigate }) {
+function Header({ pages, home, navigate, changeLocale }) {
 
     const { setLocale } = React.useContext(Locale);
     const [open, setOpen] = React.useState(false);
 
     const updateLocale = (event) => {
-        event.target.checked ? setLocale('en') : setLocale('it');
+        if (event.target.checked) {
+            setLocale('en');
+            changeLocale('en');
+        } else {
+            setLocale('it')
+            changeLocale('it');
+        }
     }
 
     const Logo = ({ clickable }) => (<Box sx={{ height: 64, cursor: clickable ? 'pointer' : 'auto' }} onClick={clickable ? () => navigate(home) : null} component="img" src="/static/logo.png" />);

@@ -1,8 +1,10 @@
 import { Box, Stack, Typography } from '@mui/material';
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Agenda() {
+  const { t } = useTranslation();
 
     return (
         <Box id="agenda" minWidth={{ md: '80vw' }} flex>
@@ -11,31 +13,31 @@ function Agenda() {
                     <Box display='flex' height={140} padding={2}>
                         <Box margin='auto' component='img' maxWidth={70} src='/static/calendar.png' />
                     </Box>
-                    <Typography textAlign='center' fontWeight='bold' paddingBottom={2}>Il giorno del matrimonio</Typography>
-                    <Typography textAlign='center' paddingBottom={2}>9 settembre 2023</Typography>
-                    <Typography textAlign='center'>Segnati la data.</Typography>
-                    <Typography textAlign='center'>È un sabato!</Typography>
+                    <Typography textAlign='center' fontWeight='bold' paddingBottom={2}>{t('agenda.weddingDay')}</Typography>
+                    <Typography textAlign='center' paddingBottom={2}>{t('agenda.weddingDate')}</Typography>
+                    <Typography textAlign='center'>{t('agenda.saveTheDate1')}</Typography>
+                    <Typography textAlign='center'>{t('agenda.saveTheDate2')}</Typography>
                 </Box>
                 <Box margin='auto' height={{ md: 400 }} width={{ md: 200 }}>
                     <Box display='flex' height={140} padding={2}>
                         <Box margin='auto' component='img' maxWidth={80} src='/static/church.png' />
                     </Box>
-                    <Typography textAlign='center' fontWeight='bold' paddingBottom={2}>Cerimonia</Typography>
-                    <Typography textAlign='center' paddingBottom={2}>h 15:30</Typography>
-                    <Typography textAlign='center'>Abbazia di San Donato</Typography>
-                    <Typography textAlign='center'>Via S. Donato, 6</Typography>
-                    <Typography textAlign='center'>Sesto Calende (VA)</Typography>
+                    <Typography textAlign='center' fontWeight='bold' paddingBottom={2}>{t('agenda.ceremony')}</Typography>
+                    <Typography textAlign='center' paddingBottom={2}>{t('agenda.ceremonyTime')}</Typography>
+                    <Typography textAlign='center'>{t('agenda.ceremonyDirection1')}</Typography>
+                    <Typography textAlign='center'>{t('agenda.ceremonyDirection2')}</Typography>
+                    <Typography textAlign='center'>{t('agenda.ceremonyDirection3')}</Typography>
                 </Box>
                 <Box margin='auto' height={{ md: 400 }} width={{ md: 200 }} >
 
                     <Box display='flex' height={140} padding={2}>
                         <Box margin='auto' component='img' maxWidth={60} src='/static/fireworks.png' />
                     </Box>
-                    <Typography textAlign='center' fontWeight='bold' paddingBottom={2}>Ricevimento</Typography>
-                    <Typography textAlign='center' paddingBottom={2}>h 17:00</Typography>
-                    <Typography textAlign='center'>Tenuta Aquasole</Typography>
-                    <Typography textAlign='center'>Via Fornace, 498/1</Typography>
-                    <Typography textAlign='center'>Mercallo (VA)</Typography>
+                    <Typography textAlign='center' fontWeight='bold' paddingBottom={2}>{t('agenda.reception')}</Typography>
+                    <Typography textAlign='center' paddingBottom={2}>{t('agenda.receptionTime')}</Typography>
+                    <Typography textAlign='center'>{t('agenda.receptionDirection1')}</Typography>
+                    <Typography textAlign='center'>{t('agenda.receptionDirection2')}</Typography>
+                    <Typography textAlign='center'>{t('agenda.receptionDirection3')}</Typography>
                 </Box>
             </Stack>
         </Box>
