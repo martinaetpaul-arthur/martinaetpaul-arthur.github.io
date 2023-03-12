@@ -34,7 +34,7 @@
         "accountHolder": "Account holder",
         "iban": "IBAN",
         "swift": "SWIFT",
-        "description": "Causale",
+        "description": "Reason",
         "thanks": "Grazie di cuore!"
     }
 }
