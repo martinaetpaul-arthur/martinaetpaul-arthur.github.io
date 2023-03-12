@@ -12,7 +12,7 @@ const Map = () => {
     React.useEffect(() => {
         const map = new window.google.maps.Map(ref.current, {
             center: center,
-            zoom: 13
+            zoom: 12
         });
 
         new window.google.maps.Marker({

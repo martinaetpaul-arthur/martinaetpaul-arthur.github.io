@@ -70,7 +70,7 @@ function Header({ pages, home, navigate, changeLocale }) {
                 <Box width={'70vw'} maxWidth={300}>
                     <List>
                         {pages.map((page) => (
-                            <Box>
+                            <Box key={page}>
                                 <ListItem>
                                     <Button
                                         key={page}
