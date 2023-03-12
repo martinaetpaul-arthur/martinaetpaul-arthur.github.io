@@ -25,7 +25,7 @@ function GiftRegistry() {
                         <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.accountHolder')}:</Box> STEFANO BIELLI</Typography>
                         <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.iban')}:</Box> ES34 0081 0167 4500 0184 7687</Typography>
                         <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.swift')}:</Box> BSAB ESBB</Typography>
-                        <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.description')}:</Box>  Viaggio di nozze</Typography>
+                        <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.description')}:</Box>  Viaggio di nozze Sara e Stefano</Typography>
                     </Box>
                     <Typography textAlign='center' marginTop={4} marginBottom={2}>{t('gift.thanks')}</Typography>
                 </Box>
