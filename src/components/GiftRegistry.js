@@ -9,7 +9,7 @@ function GiftRegistry() {
         <Container id="gift-registry">
             <Box margin='auto' maxWidth={600}>
                 <Box padding={3} display='flex' flexDirection='column'>
-                    <Box display='flex' justifyContent='center' margin={2}>
+                    <Box display='flex' justifyContent='center' marginBottom={2}>
                         <Box component='img' src='static/gift_registry.png' maxWidth={200} />
                     </Box>
                     <Typography textAlign='center'>{t('gift.saintAugustine1')}</Typography>

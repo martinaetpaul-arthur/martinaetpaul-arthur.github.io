@@ -8,7 +8,7 @@ function Agenda() {
 
     return (
         <Box id="agenda" minWidth={{ md: '80vw' }} flex>
-            <Stack direction={{ sm: 'column', md: 'row' }} paddingTop={2} flex justifyContent='space-between'>
+            <Stack direction={{ sm: 'column', md: 'row' }} flex justifyContent='space-between'>
                 <Box margin='auto' height={{ md: 400 }} width={{ md: 200 }}>
                     <Box display='flex' height={140} padding={2}>
                         <Box margin='auto' component='img' maxWidth={70} src='/static/calendar.png' />
