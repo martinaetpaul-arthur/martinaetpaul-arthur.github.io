@@ -25,6 +25,6 @@ function Footer() {
         </Box>
 
     );
-
 }
+
 export default Footer;

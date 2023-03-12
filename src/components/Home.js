@@ -26,6 +26,6 @@ function Home({ onRsvpClick }) {
             </Grid>
         </Box>
     );
-
 }
+
 export default Home;

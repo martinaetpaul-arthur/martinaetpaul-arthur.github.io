@@ -37,6 +37,6 @@ function GiftRegistry() {
             </Box>
         </Container>
     );
-
 }
+
 export default GiftRegistry;

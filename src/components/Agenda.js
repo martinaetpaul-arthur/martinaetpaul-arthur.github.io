@@ -42,6 +42,6 @@ function Agenda() {
             </Stack>
         </Box>
     );
-
 }
+
 export default Agenda;
