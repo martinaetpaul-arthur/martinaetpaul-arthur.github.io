@@ -10,7 +10,7 @@ function Agenda() {
     return (
         <Box id="agenda" minWidth={{ md: '80vw' }} flex>
             <Stack direction={{ sm: 'column', md: 'row' }} flex justifyContent='space-between'>
-                <Box margin='auto' height={{ md: 350 }} width={{ md: 200 }}>
+                <Box margin='auto' height={{ md: 300 }} width={{ md: 200 }}>
                     <Box display='flex' height={140} padding={2}>
                         <Box margin='auto' component='img' maxWidth={70} src='/static/calendar.png' />
                     </Box>
@@ -19,7 +19,7 @@ function Agenda() {
                     <Typography textAlign='center'>{t('agenda.saveTheDate1')}</Typography>
                     <Typography textAlign='center'>{t('agenda.saveTheDate2')}</Typography>
                 </Box>
-                <Box margin='auto' height={{ md: 350 }} width={{ md: 200 }}>
+                <Box margin='auto' height={{ md: 300 }} width={{ md: 200 }}>
                     <Box display='flex' height={140} padding={2}>
                         <Box margin='auto' component='img' maxWidth={80} src='/static/church.png' />
                     </Box>
@@ -29,8 +29,7 @@ function Agenda() {
                     <Typography textAlign='center'>{t('agenda.ceremonyDirection2')}</Typography>
                     <Typography textAlign='center'>{t('agenda.ceremonyDirection3')}</Typography>
                 </Box>
-                <Box margin='auto' height={{ md: 350 }} width={{ md: 200 }} >
-
+                <Box margin='auto' height={{ md: 300 }} width={{ md: 200 }} >
                     <Box display='flex' height={140} padding={2}>
                         <Box margin='auto' component='img' maxWidth={60} src='/static/fireworks.png' />
                     </Box>
@@ -41,7 +40,7 @@ function Agenda() {
                     <Typography textAlign='center'>{t('agenda.receptionDirection3')}</Typography>
                 </Box>
             </Stack>
-            <Box paddingTop={4}>
+            <Box paddingTop={{xs: 4, sm: 3}}>
                 <GoogleMaps />
             </Box>
         </Box>
