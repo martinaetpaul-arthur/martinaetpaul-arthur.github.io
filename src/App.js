@@ -17,6 +17,7 @@ const theme = createTheme(
     },
 
     typography: {
+      fontSize: 15,
       fontFamily: [
         '"Josefin Slab", serif',
         'Roboto',
@@ -63,13 +64,13 @@ function Root() {
   const pages = Pages();
 
   const changeLocale = (lang) => {
-    i18n.changeLocale(lang);
+    i18n.changeLanguage(lang);
     setLocale(lang);
   };
 
   return (
 
-    <Locale.Provider value={ locale }>
+    <Locale.Provider value={locale}>
       <CssBaseline />
       <Container maxWidth="xl">
         <Stack minHeight="100vh" justifyContent="space-between" alignItems="stretch" >

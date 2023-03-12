@@ -2,11 +2,11 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 import Agenda from "./Agenda";
-import Contribute from "./Contribute";
+import GiftRegistry from "./GiftRegistry";
 import Home from "./Home";
 import Rsvp from "./Rsvp";
 
 export {
     Header, Footer,
-    Home, Agenda, Contribute, Rsvp
+    Home, Agenda, GiftRegistry as Contribute, Rsvp
 };

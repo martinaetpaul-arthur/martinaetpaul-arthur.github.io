@@ -6,7 +6,7 @@ import React from 'react';
 function Footer() {
 
     return (
-        <Box component='footer' id="footer" padding={2}>
+        <Box component='footer' id="footer" padding={2} paddingTop={4}>
             <Grid container justifyContent="center" >
                 <Grid item >
                     <Typography fontFamily='Roboto' padding={1} variant='caption' display="flex" >
