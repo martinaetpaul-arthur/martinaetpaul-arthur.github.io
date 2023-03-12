@@ -9,15 +9,13 @@ import { Locale } from './Locale.js';
 
 function Header({ pages, home, navigate, changeLocale }) {
 
-    const { setLocale } = React.useContext(Locale);
+    const locale = React.useContext(Locale);
     const [open, setOpen] = React.useState(false);
 
     const updateLocale = (event) => {
         if (event.target.checked) {
-            setLocale('en');
             changeLocale('en');
         } else {
-            setLocale('it')
             changeLocale('it');
         }
     }
@@ -60,7 +58,7 @@ function Header({ pages, home, navigate, changeLocale }) {
 
                 <Grid item xs={1} alignItems="center" justifyContent="right" display="flex">
                     <Typography fontFamily='Roboto' color="primary">IT</Typography>
-                    <Switch onChange={updateLocale} size="small" />
+                    <Switch defaultChecked={locale === 'en'} onChange={updateLocale} size="small" />
                     <Typography fontFamily='Roboto' color="primary">EN</Typography>
                 </Grid>
             </Grid>

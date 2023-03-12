@@ -25,7 +25,7 @@ const theme = createTheme(
   }
 );
 
-const Pages = (locale) => {
+const Pages = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const list = [t('pages.home'), t('pages.agenda'), t('pages.rsvp'), t('pages.giftRegistry')];
@@ -58,12 +58,12 @@ const Pages = (locale) => {
 }
 
 function Root() {
-  const [locale, setLocale] = React.useState('it');
   const { i18n } = useTranslation();
-  const pages = Pages(locale);
+  const [locale, setLocale] = React.useState(i18n.language);
+  const pages = Pages();
   return (
 
-    <Locale.Provider value={{ locale, setLocale }}>
+    <Locale.Provider value={ locale }>
       <CssBaseline />
       <Container maxWidth="xl">
         <Stack minHeight="100vh" justifyContent="space-between" alignItems="stretch" >
@@ -71,7 +71,10 @@ function Root() {
             pages={pages.list}
             home={pages.home}
             navigate={pages.navigate}
-            changeLocale={(lang) => i18n.changeLanguage(lang)}
+            changeLocale={(lang) => {
+              i18n.changeLanguage(lang);
+              setLocale(lang);
+            }}
           />
           <Box display="flex" flexGrow={1} justifyContent="center">
             <Routes>

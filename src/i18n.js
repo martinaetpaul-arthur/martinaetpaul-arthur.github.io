@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 import en from './i18n/en.json';
 import it from './i18n/it.json';
 
@@ -11,11 +12,12 @@ i18n
     .use(initReactI18next)
     // init i18next
     // for all options read: https://www.i18next.com/overview/configuration-options
+    .use(LanguageDetector)
     .init({
         detection: {
             caches: ['localStorage', 'cookie']
         },
-        lng: 'it',
+        fallbackLng: 'it',
         debug: true,
         resources: {
             en: {
