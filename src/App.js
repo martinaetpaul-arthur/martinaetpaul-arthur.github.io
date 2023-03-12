@@ -61,6 +61,12 @@ function Root() {
   const { i18n } = useTranslation();
   const [locale, setLocale] = React.useState(i18n.language);
   const pages = Pages();
+
+  const changeLocale = (lang) => {
+    i18n.changeLocale(lang);
+    setLocale(lang);
+  };
+
   return (
 
     <Locale.Provider value={ locale }>
@@ -71,10 +77,7 @@ function Root() {
             pages={pages.list}
             home={pages.home}
             navigate={pages.navigate}
-            changeLocale={(lang) => {
-              i18n.changeLanguage(lang);
-              setLocale(lang);
-            }}
+            changeLocale={changeLocale}
           />
           <Box display="flex" flexGrow={1} justifyContent="center">
             <Routes>
