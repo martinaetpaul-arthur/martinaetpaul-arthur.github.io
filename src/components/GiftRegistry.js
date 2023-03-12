@@ -13,7 +13,7 @@ function GiftRegistry() {
                         <Box component='img' src='static/gift_registry.png' maxWidth={200} />
                     </Box>
                     <Typography textAlign='center'>{t('gift.saintAugustine1')}</Typography>
-                    <Typography textAlign='center'>{t('gift.saintAugustine2')}</Typography>
+                    <Typography textAlign='center' fontStyle='italic'>{t('gift.saintAugustine2')}</Typography>
                 </Box>
                 <Divider sx={{ bgcolor: "primary.main", maxWidth: 200, margin: 'auto' }} />
                 <Box justifyContent='center'>
