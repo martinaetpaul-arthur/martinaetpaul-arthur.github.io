@@ -13,7 +13,7 @@ function GiftRegistry() {
                         <Box component='img' src='static/gift_registry.png' maxWidth={200} />
                     </Box>
                     <Typography textAlign='center'>{t('gift.saintAugustine1')}</Typography>
-                    <Typography textAlign='center' fontStyle='italic'>{t('gift.saintAugustine2')}</Typography>
+                    <Typography textAlign='center' fontStyle='italic' fontSize={14}>{t('gift.saintAugustine2')}</Typography>
                 </Box>
                 <Divider sx={{ bgcolor: "primary.main", maxWidth: 200, margin: 'auto' }} />
                 <Box justifyContent='center'>
@@ -27,7 +27,7 @@ function GiftRegistry() {
                         <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.swift')}:</Box> BSAB ESBB</Typography>
                         <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.description')}:</Box>  Viaggio di nozze</Typography>
                     </Box>
-                    <Typography textAlign='center' marginTop={2}>{t('gift.thanks')}</Typography>
+                    <Typography textAlign='center' marginTop={4} marginBottom={2}>{t('gift.thanks')}</Typography>
                 </Box>
                 <Box>
                     <Box display='flex' justifyContent='center'>
