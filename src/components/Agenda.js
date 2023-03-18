@@ -8,7 +8,7 @@ function Agenda() {
     const { t } = useTranslation();
 
     return (
-        <Box id="agenda" minWidth={{ md: '80vw' }} flex>
+        <Box id="agenda" minWidth={{ md: '80%' }} flex>
             <Stack direction={{ sm: 'column', md: 'row' }} flex justifyContent='space-between'>
                 <Box margin='auto' height={{ md: 300 }} width={{ md: 200 }}>
                     <Box display='flex' height={140} padding={2}>
@@ -40,7 +40,7 @@ function Agenda() {
                     <Typography textAlign='center'>{t('agenda.receptionDirection3')}</Typography>
                 </Box>
             </Stack>
-            <Box paddingTop={{xs: 4, sm: 3}}>
+            <Box paddingTop={{xs: 4, sm: 3}} width={{xs: '80vw', md: '100%'}}>
                 <GoogleMaps />
             </Box>
         </Box>

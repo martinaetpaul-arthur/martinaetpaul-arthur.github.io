@@ -26,7 +26,7 @@ const Map = () => {
         });
     });
 
-    return <Box ref={ref} id="map" height={300} width='80vw' />;
+    return <Box ref={ref} id="map" height={300} width='100%' />;
 }
 
 function GoogleMaps() {
