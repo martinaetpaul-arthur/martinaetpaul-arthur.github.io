@@ -5,8 +5,8 @@ import { Box, CircularProgress } from '@mui/material';
 
 const Map = () => {
     const abbazia = { lat: 45.728171878011, lng: 8.633180186455347 };
-    const aquasole = { lat: 45.75126366906859, lng: 8.674680280393812 };
-    const center = { lat: (abbazia.lat + aquasole.lat) / 2, lng: (abbazia.lng + aquasole.lng) / 2 }
+    const lidoDiSesto = { lat: 45.75126366906859, lng: 8.674680280393812 };
+    const center = { lat: (abbazia.lat + lidoDiSesto.lat) / 2, lng: (abbazia.lng + lidoDiSesto.lng) / 2 }
     const ref = React.useRef();
 
     React.useEffect(() => {
@@ -21,7 +21,7 @@ const Map = () => {
         });
 
         new window.google.maps.Marker({
-            position: aquasole,
+            position: lidoDiSesto,
             map: map,
         });
     });

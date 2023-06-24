@@ -21,10 +21,10 @@
         "ceremonyDirection2": "Via S. Donato, 6",
         "ceremonyDirection3": "Sesto Calende (VA)",
         "reception": "Ricevimento",
-        "receptionTime": "h 17:00",
-        "receptionDirection1": "Tenuta Aquasole",
-        "receptionDirection2": "Via Fornace, 498/1",
-        "receptionDirection3": "Mercallo (VA)" 
+        "receptionTime": "h 17:30",
+        "receptionDirection1": "Lido di Sesto",
+        "receptionDirection2": "Via Angera, 1",
+        "receptionDirection3": "Sesto Calende (VA)" 
     },
     "gift": {
         "saintAugustine1": "Il mondo è un libro, e chi non viaggia legge solo una pagina.",
