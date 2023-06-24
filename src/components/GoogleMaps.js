@@ -4,25 +4,29 @@ import { Box, CircularProgress } from '@mui/material';
 
 
 const Map = () => {
-    const abbazia = { lat: 45.728171878011, lng: 8.633180186455347 };
-    const lidoDiSesto = { lat: 45.75126366906859, lng: 8.674680280393812 };
+    const abbazia = { lat: 45.7298706151249, lng: 8.632667229975121 };
+    const lidoDiSesto = { lat: 45.73005446450972, lng: 8.619991846390114 };
     const center = { lat: (abbazia.lat + lidoDiSesto.lat) / 2, lng: (abbazia.lng + lidoDiSesto.lng) / 2 }
     const ref = React.useRef();
 
     React.useEffect(() => {
         const map = new window.google.maps.Map(ref.current, {
             center: center,
-            zoom: 12
+            zoom: 15
         });
 
         new window.google.maps.Marker({
             position: abbazia,
             map: map,
+            title: "Abbazia",
+            clickable: true
         });
 
         new window.google.maps.Marker({
             position: lidoDiSesto,
             map: map,
+            title: "Lido di Sesto",
+            clickable: true
         });
     });
 
