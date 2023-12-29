@@ -22,10 +22,10 @@ function GiftRegistry() {
                         <Typography textAlign={{ xs: 'justify', sm: 'center' }}>{t('gift.content2')}</Typography>
                     </Box>
                     <Box border={1} borderColor='primary.main' maxWidth={300} margin='auto' padding={0.5} display='flex' flexDirection='column'>
-                        <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.accountHolder')}:</Box> STEFANO BIELLI</Typography>
-                        <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.iban')}:</Box> ES34 0081 0167 4500 0184 7687</Typography>
-                        <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.swift')}:</Box> BSAB ESBB</Typography>
-                        <Typography textAlign='left' fontFamily='Roboto' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.description')}:</Box>  Viaggio di nozze Sara e Stefano</Typography>
+                        <Typography textAlign='left' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.accountHolder')}:</Box> STEFANO BIELLI</Typography>
+                        <Typography textAlign='left' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.iban')}:</Box> ES34 0081 0167 4500 0184 7687</Typography>
+                        <Typography textAlign='left' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.swift')}:</Box> BSAB ESBB</Typography>
+                        <Typography textAlign='left' variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.description')}:</Box>  Viaggio di nozze Sara e Stefano</Typography>
                     </Box>
                     <Typography textAlign='center' marginTop={4} marginBottom={2}>{t('gift.thanks')}</Typography>
                 </Box>

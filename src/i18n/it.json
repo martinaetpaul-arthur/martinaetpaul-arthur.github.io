@@ -6,13 +6,11 @@
         "giftRegistry": "lista nozze"
     },
     "home": {
-        "saraStefano": "Martina & Paul-Arthur",
-        "weddingDate": "9 settembre 2023",
-        "weddingDirection": "Sesto Calende, Varese, Italia"
+        "weddingDirection": "Villa Quintili, Roma, Italia"
     },
     "agenda": {
-        "weddingDay": "Il giorno del matrimonio",
-        "weddingDate": "9 settembre 2023",
+        "weddingDay": "Giorno del matrimonio",
+        "weddingDate": "Venerdì 6 settembre 2024",
         "saveTheDate1": "Segnati la data.",
         "saveTheDate2": "È un sabato!",
         "ceremony": "Cerimonia",

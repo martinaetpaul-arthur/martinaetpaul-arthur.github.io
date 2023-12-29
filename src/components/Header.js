@@ -14,9 +14,9 @@ function Header({ pages, home, navigate, changeLocale }) {
 
     const updateLocale = (event) => {
         if (event.target.checked) {
-            changeLocale('en');
-        } else {
             changeLocale('it');
+        } else {
+            changeLocale('fr');
         }
     }
 
@@ -47,7 +47,7 @@ function Header({ pages, home, navigate, changeLocale }) {
                                 onClick={() => navigate(page)}
                                 size="large"
                             >
-                                <Typography fontFamily='Roboto'>
+                                <Typography>
                                     {page}
                                 </Typography>
                             </Button>
@@ -57,9 +57,9 @@ function Header({ pages, home, navigate, changeLocale }) {
                 </Grid>
 
                 <Grid item xs={1} alignItems="center" justifyContent="right" display="flex">
-                    <Typography fontFamily='Roboto' color="primary">IT</Typography>
-                    <Switch defaultChecked={locale === 'en'} onChange={updateLocale} size="small" />
-                    <Typography fontFamily='Roboto' color="primary">EN</Typography>
+                    <Typography color="primary">FR</Typography>
+                    <Switch defaultChecked={locale === 'it'} onChange={updateLocale} size="small" />
+                    <Typography color="primary">IT</Typography>
                 </Grid>
             </Grid>
             <Drawer
@@ -79,7 +79,7 @@ function Header({ pages, home, navigate, changeLocale }) {
                                             setOpen(false);
                                         }}
                                     >
-                                        <Typography fontFamily='Roboto'>
+                                        <Typography>
                                             {page}
                                         </Typography>
                                     </Button>

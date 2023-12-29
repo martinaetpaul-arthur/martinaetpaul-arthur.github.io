@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import en from './i18n/en.json';
+import fr from './i18n/fr.json';
 import it from './i18n/it.json';
 
 // don't want to use this?
@@ -15,13 +15,13 @@ i18n
     .use(LanguageDetector)
     .init({
         detection: {
-            caches: ['localStorage', 'cookie']
+            caches: ['localStorage']
         },
-        fallbackLng: 'it',
+        fallbackLng: 'fr',
         debug: true,
         resources: {
-            en: {
-                translation: en
+            fr: {
+                translation: fr
             },
             it: {
                 translation: it

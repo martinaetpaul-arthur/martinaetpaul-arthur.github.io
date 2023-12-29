@@ -12,15 +12,14 @@ const theme = createTheme(
         default: '#ffffff',
       },
       primary: {
-        main: '#b86570'
+        main: '#cf9090'
       }
     },
 
     typography: {
-      fontSize: 15,
-      fontFamily: [
-        '"Josefin Slab", serif',
-        'Roboto',
+      fontSize: 18,
+      fontFamily:[
+        "Pompiere",
       ].join(','),
     },
   }
