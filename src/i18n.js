@@ -15,7 +15,7 @@ i18n
     .use(LanguageDetector)
     .init({
         detection: {
-            caches: ['localStorage']
+            caches: ['localStorage', 'cookie']
         },
         fallbackLng: 'fr',
         debug: true,

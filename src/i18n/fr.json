@@ -1,14 +1,13 @@
 {
     "pages": {
-        "home": "home",
-        "agenda": "agenda",
+        "home": "Page d’accueil",
+        "agenda": "Programme",
         "rsvp": "rsvp",
-        "giftRegistry": "gift registry"
+        "giftRegistry": "Liste de noces"
     },
     "home": {
-        "saraStefano": "Martina & Paul-Arthur",
-        "weddingDate": "9th September, 2023",
-        "weddingDirection": "Sesto Calende, Varese, Italia"
+        "weddingDirection": "Villa Quintili, Roma, Italia",
+        "questions": "Une question? Ecrivez-nous à "
     },
     "agenda": {
         "weddingDay": "Our wedding day",
@@ -27,14 +26,14 @@
         "receptionDirection3": "Sesto Calende (VA)" 
     },
     "gift": {
-        "saintAugustine1": "The world is a book, and those who do not travel read only one page.",
-        "saintAugustine2": "Saint Augustine",
-        "content1": "Your presence at our wedding is enough of a gift!",
-        "content2": "However, if you wish to contribute in some other way, then we'd greatly appreciate a small contribution to enriching our book with a beautiful and unforgettable page.",
-        "accountHolder": "Account holder",
-        "iban": "IBAN",
+        "content1": "Nous sommes ravis de pouvoir fêter cette belle journée avec vous tous, c’est notre plus beau cadeau, être entourés de notre famille et de nos proches. ",
+        "content2": "Vous êtes cependant nombreux à nous avoir demandé ce qui nous ferait plaisir pour «marquer le coup». Après grande réflexion nous aimerions beaucoup pouvoir découvrir la Tanzanie, entre safari et farniente, afin de débuter notre vie de jeunes mariés avec des étoiles plein les yeux.",
+        "content3": "Si vous souhaitez y participer, vous pouvez nous adresser vos gentilles attentions sur :",
+        "accountHolder": "Nom",
+        "iban": "RIB",
         "swift": "SWIFT",
-        "description": "Reason",
-        "thanks": "Thank you very much!"
+        "description": "Libellé",
+        "content4": "A côté du livre d’or, nous mettrons également une jolie boîte avec des enveloppes à disposition si vous préférez.",
+        "thanks": "Il nous tarde de vous voir!"
     }
 }

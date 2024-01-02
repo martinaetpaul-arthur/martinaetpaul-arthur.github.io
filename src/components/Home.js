@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from '@mui/material';
+import { Box, Button, Grid, Link, Typography } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -12,7 +12,7 @@ function Home({ onRsvpClick }) {
                     <Box sx={{ objectFit: 'contain', maxWidth: { xs: 450, sm: 550 } }} component="img" src="/static/love.png" />
                 </Grid>
                 <Grid item>
-                    <Typography textAlign='center' color='primary' variant='h6'>{t('home.weddingDirection')}</Typography>
+                    <Typography textAlign='center' variant='h6'>{t('home.weddingDirection')}</Typography>
                 </Grid>
                 <Grid item>
                     <Button onClick={onRsvpClick} variant="contained" disableElevation>
@@ -20,6 +20,9 @@ function Home({ onRsvpClick }) {
                             RSVP
                         </Typography>
                     </Button>
+                </Grid>
+                <Grid item>
+                    <Typography paddingTop={3} paddingBottom={1} textAlign='center' >{t('home.questions')}<Link href='mailto:mariage.martina.pa@gmail.com' color='primary'>mariage.martina.pa@gmail.com</Link></Typography>
                 </Grid>
             </Grid>
         </Box>

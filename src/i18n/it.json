@@ -25,14 +25,14 @@
         "receptionDirection3": "Sesto Calende (VA)" 
     },
     "gift": {
-        "saintAugustine1": "Il mondo è un libro, e chi non viaggia legge solo una pagina.",
-        "saintAugustine2": "Sant'Agostino",
         "content1": "Per il nostro matrimonio, il regalo più bello sarà la vostra presenza!",
         "content2": "Ma se avete intenzione di farci anche un altro dono, allora vi saremmo grati se vorrete contribuire ad arricchire il nostro libro con una pagina bellissima e indimenticabile.",
+        "content3": "Si vous souhaitez y participer, vous pouvez nous adresser vos gentilles attentions sur :",
         "accountHolder": "Intestatario",
         "iban": "IBAN",
         "swift": "SWIFT",
         "description": "Causale",
+        "content4": "Si vous souhaitez y participer, vous pouvez nous adresser vos gentilles attentions sur :",
         "thanks": "Grazie di cuore!"
     }
 }
