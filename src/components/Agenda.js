@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Link, Stack, Typography } from '@mui/material';
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -24,12 +24,12 @@ function Agenda() {
                     </Box>
                     <Typography textAlign='center' fontWeight='bold' paddingBottom={2}>{t('agenda.reception')}</Typography>
                     <Typography textAlign='center' paddingBottom={2}>{t('agenda.receptionTime')}</Typography>
-                    <Typography textAlign='center'>{t('agenda.receptionDirection1')}</Typography>
+                    <Typography textAlign='center'><Link href="https://www.villaquintili.com/">{t('agenda.receptionDirection1')}</Link></Typography>
                     <Typography textAlign='center'>{t('agenda.receptionDirection2')}</Typography>
                     <Typography textAlign='center'>{t('agenda.receptionDirection3')}</Typography>
                 </Box>
             </Stack>
-            <Box paddingTop={{ xs: 4, sm: 3 }} width={{ xs: '80vw', md: '100%' }}>
+            <Box paddingTop={{ xs: 4, sm: 3 }} width={{ xs: '80vw', md: '100%' }} >
                 <GoogleMaps />
             </Box>
         </Box>

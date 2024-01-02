@@ -2,7 +2,7 @@ import { Box, Container, createTheme, CssBaseline, Stack, ThemeProvider } from '
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { HashRouter, Route, Routes, useNavigate } from 'react-router-dom';
-import { Agenda, Contribute, Footer, Header, Home, Rsvp } from './components';
+import { Agenda, GiftRegistry, Footer, Header, Home, Rsvp, Hotels } from './components';
 import { Locale } from './components/Locale';
 
 const theme = createTheme(
@@ -18,7 +18,7 @@ const theme = createTheme(
 
     typography: {
       fontSize: 18,
-      fontFamily:[
+      fontFamily: [
         "Pompiere",
         "Roboto"
       ].join(','),
@@ -29,7 +29,7 @@ const theme = createTheme(
 const Pages = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const list = [t('pages.home'), t('pages.agenda'), t('pages.rsvp'), t('pages.giftRegistry')];
+  const list = [t('pages.home'), t('pages.agenda'), t('pages.hotels'), t('pages.rsvp'), t('pages.giftRegistry')];
 
   return {
     list: list,
@@ -43,13 +43,16 @@ const Pages = () => {
           navigate('/agenda')
           break;
         case list[2]:
-          navigate('/rsvp')
+          navigate('/hotels')
           break;
         case list[3]:
+          navigate('/rsvp')
+          break;
+        case list[4]:
           navigate('/gift')
           break;
         default:
-          navigate('/error')
+          navigate('/')
       }
     },
     navigateRsvp: () => {
@@ -84,7 +87,8 @@ function Root() {
             <Routes>
               <Route path='/' element={<Home onRsvpClick={() => pages.navigateRsvp()} />} />
               <Route path='/agenda' element={<Agenda />} />
-              <Route path='/gift' element={<Contribute />} />
+              <Route path='/hotels' element={<Hotels />} />
+              <Route path='/gift' element={<GiftRegistry />} />
               <Route path='/rsvp' element={<Rsvp />} />
             </Routes>
           </Box>

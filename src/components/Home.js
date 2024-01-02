@@ -9,7 +9,7 @@ function Home({ onRsvpClick }) {
         <Box id="home">
             <Grid container direction="column" justifyContent="space-between" alignItems="center" rowSpacing={2}>
                 <Grid item>
-                    <Box sx={{ objectFit: 'contain', maxWidth: { xs: 450, sm: 550 } }} component="img" src="/static/love.png" />
+                    <Box sx={{ objectFit: 'contain', maxWidth: { xs: 350, sm: 550 } }} component="img" src="/static/love.png" />
                 </Grid>
                 <Grid item>
                     <Typography textAlign='center' variant='h6'>{t('home.weddingDirection')}</Typography>
@@ -23,7 +23,7 @@ function Home({ onRsvpClick }) {
                 </Grid>
                 <Grid item>
                     <Typography textAlign='center' >{t('home.questions')}</Typography>
-                    <Typography paddingBottom={1} textAlign='center' ><Link href='mailto:mariage.martina.pa@gmail.com' color='primary'>mariage.martina.pa@gmail.com</Link></Typography>
+                    <Typography paddingBottom={1} textAlign='center' ><Link href='mailto:mariage.martina.pa@gmail.com'>mariage.martina.pa@gmail.com</Link></Typography>
                 </Grid>
             </Grid>
         </Box>

@@ -29,13 +29,6 @@ function GiftRegistry() {
                     <Typography textAlign={{ xs: 'justify', sm: 'center' }} marginTop={4}>{t('gift.content4')}</Typography>
                     <Typography textAlign='center' marginTop={1} marginBottom={2}>{t('gift.thanks')}</Typography>
                 </Box>
-
-                {/* <Box paddingTop={3} paddingBottom={3} display='flex' flexDirection='column'>
-                    <Typography textAlign={{ xs: 'justify', sm: 'center' }} fontWeight='bold' paddingBottom={2}>{t('gift.content1')}</Typography>
-                    <Box display='flex' justifyContent='center' marginBottom={4}>
-                        <Box component='img' src='static/gift_registry.png' maxWidth={200} />
-                    </Box>
-                </Box> */}
             </Box>
         </Container>
     );

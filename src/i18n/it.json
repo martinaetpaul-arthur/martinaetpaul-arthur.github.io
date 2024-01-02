@@ -3,7 +3,8 @@
         "home": "home",
         "agenda": "programma",
         "rsvp": "rsvp",
-        "giftRegistry": "lista nozze"
+        "giftRegistry": "lista nozze",
+        "hotels": "alloggi"
     },
     "home": {
         "weddingDirection": "Villa Quintili, Roma, Italia",
@@ -18,8 +19,13 @@
         "receptionDirection2": "Via Appia Antica, 290",
         "receptionDirection3": "00178 Roma RM, Italia" 
     },
+    "hotels": {
+        "description1": "Accanto alla villa (attenzione: la Villa si trova in un luogo storico, l'accesso è quindi regolamentato)",
+        "description2": "Accanto alla villa e alla metropolitana",
+        "description3": "In pieno centro"
+    },
     "gift": {
-        "content1": "Siamo felicissimi di poter festeggiare con tutti voi questo bellissimo giorno e il nostro dono più grande di avere parenti e amici riuniti.",
+        "content1": "Siamo felicissimi di poter festeggiare con tutti voi questo bellissimo giorno, è il nostro dono più grande, essere circondati dalla nostra famiglia e dai nostri cari.",
         "content2": "Molti di voi però ci hanno chiesto cosa ci renderebbe ancora più felici. Dopo una bella riflessione ci piacerebbe moltissimo poter scoprire la Tanzania. Tra safari e relax, per iniziare la nostra vita da novelli sposi con le stelle negli occhi.", 
         "content3": "Se volete contribuire potete inviarci la vostra partecipazione su: ",
         "accountHolder": "Intestatario",
