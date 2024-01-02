@@ -8,9 +8,9 @@ function GiftRegistry() {
     return (
         <Container id="gift-registry">
             <Box margin='auto' maxWidth={600}>
-                <Box paddingTop={3}  paddingBottom={3}display='flex' flexDirection='column'>
-                    <Box display='flex' justifyContent='center' marginBottom={4}>
-                        <Box component='img' src='static/gift_registry.png' maxWidth={200} />
+                <Box>
+                    <Box display='flex' justifyContent='center'>
+                        <Box component='img' src='static/journey_together.png' sx={{ maxWidth: { xs: 300, md: 400 } }} />
                     </Box>
                 </Box>
                 <Box justifyContent='center'>
@@ -26,14 +26,16 @@ function GiftRegistry() {
                         <Typography textAlign='left' fontFamily='Roboto' fontSize={14} variant='caption'><Box display='inline' fontWeight='bold'>{t('gift.description')}:</Box>  Mariage Martina & Paul-Arthur</Typography>
                     </Box>
 
-                    <Typography textAlign={{ xs: 'justify', sm: 'center' }}  marginTop={4}>{t('gift.content4')}</Typography>
+                    <Typography textAlign={{ xs: 'justify', sm: 'center' }} marginTop={4}>{t('gift.content4')}</Typography>
                     <Typography textAlign='center' marginTop={1} marginBottom={2}>{t('gift.thanks')}</Typography>
                 </Box>
-                <Box>
-                    <Box display='flex' justifyContent='center'>
-                        <Box component='img' src='static/journey_together.png' sx={{ maxWidth: { xs: 300, md: 400 } }} />
+
+                {/* <Box paddingTop={3} paddingBottom={3} display='flex' flexDirection='column'>
+                    <Typography textAlign={{ xs: 'justify', sm: 'center' }} fontWeight='bold' paddingBottom={2}>{t('gift.content1')}</Typography>
+                    <Box display='flex' justifyContent='center' marginBottom={4}>
+                        <Box component='img' src='static/gift_registry.png' maxWidth={200} />
                     </Box>
-                </Box>
+                </Box> */}
             </Box>
         </Container>
     );

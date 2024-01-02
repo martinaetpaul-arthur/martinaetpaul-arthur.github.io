@@ -10,20 +10,13 @@
         "questions": "Une question? Ecrivez-nous à "
     },
     "agenda": {
-        "weddingDay": "Our wedding day",
-        "weddingDate": "9th September, 2023",
-        "saveTheDate1": "Save the date.",
-        "saveTheDate2": "It’s a Saturday!",
-        "ceremony": "Ceremony",
-        "ceremonyTime": "h 15:30",
-        "ceremonyDirection1": "Abbazia di San Donato",
-        "ceremonyDirection2": "Via S. Donato, 6",
-        "ceremonyDirection3": "Sesto Calende (VA)",
-        "reception": "Reception",
-        "receptionTime": "h 17:30",
-        "receptionDirection1": "Lido di Sesto",
-        "receptionDirection2": "Via Angera, 1",
-        "receptionDirection3": "Sesto Calende (VA)" 
+        "weddingDay": "Jour du mariage",
+        "weddingDate": "Vendredi 6 septembre 2024",
+        "reception": "Réception",
+        "receptionTime": "17h30",
+        "receptionDirection1": "Villa Quintili",
+        "receptionDirection2": "Via Appia Antica, 290",
+        "receptionDirection3": "00178 Roma RM, Italie" 
     },
     "gift": {
         "content1": "Nous sommes ravis de pouvoir fêter cette belle journée avec vous tous, c’est notre plus beau cadeau, être entourés de notre famille et de nos proches. ",
