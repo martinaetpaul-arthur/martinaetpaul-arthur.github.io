@@ -8,7 +8,7 @@ function GiftRegistry() {
     return (
         <Container id="gift-registry">
             <Box margin='auto' maxWidth={600}>
-                <Box>
+                <Box paddingBottom={3}>
                     <Box display='flex' justifyContent='center'>
                         <Box component='img' src='static/journey_together.png' sx={{ maxWidth: { xs: 300, md: 400 } }} />
                     </Box>
