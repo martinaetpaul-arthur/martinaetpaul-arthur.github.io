@@ -22,7 +22,8 @@ function Home({ onRsvpClick }) {
                     </Button>
                 </Grid>
                 <Grid item>
-                    <Typography paddingBottom={1} textAlign='center' >{t('home.questions')}<Link href='mailto:mariage.martina.pa@gmail.com' color='primary'>mariage.martina.pa@gmail.com</Link></Typography>
+                    <Typography textAlign='center' >{t('home.questions')}</Typography>
+                    <Typography paddingBottom={1} textAlign='center' ><Link href='mailto:mariage.martina.pa@gmail.com' color='primary'>mariage.martina.pa@gmail.com</Link></Typography>
                 </Grid>
             </Grid>
         </Box>

@@ -6,33 +6,27 @@
         "giftRegistry": "lista nozze"
     },
     "home": {
-        "weddingDirection": "Villa Quintili, Roma, Italia"
+        "weddingDirection": "Villa Quintili, Roma, Italia",
+        "questions": "Avete domande? Scriveteci a "
     },
     "agenda": {
         "weddingDay": "Giorno del matrimonio",
         "weddingDate": "Venerdì 6 settembre 2024",
-        "saveTheDate1": "Segnati la data.",
-        "saveTheDate2": "È un sabato!",
-        "ceremony": "Cerimonia",
-        "ceremonyTime": "h 15:30",
-        "ceremonyDirection1": "Abbazia di San Donato",
-        "ceremonyDirection2": "Via S. Donato, 6",
-        "ceremonyDirection3": "Sesto Calende (VA)",
         "reception": "Ricevimento",
-        "receptionTime": "h 17:30",
-        "receptionDirection1": "Lido di Sesto",
-        "receptionDirection2": "Via Angera, 1",
-        "receptionDirection3": "Sesto Calende (VA)" 
+        "receptionTime": "17h30",
+        "receptionDirection1": "Villa Quintili",
+        "receptionDirection2": "Via Appia Antica, 290",
+        "receptionDirection3": "00178 Roma RM, Italia" 
     },
     "gift": {
-        "content1": "Per il nostro matrimonio, il regalo più bello sarà la vostra presenza!",
-        "content2": "Ma se avete intenzione di farci anche un altro dono, allora vi saremmo grati se vorrete contribuire ad arricchire il nostro libro con una pagina bellissima e indimenticabile.",
-        "content3": "Si vous souhaitez y participer, vous pouvez nous adresser vos gentilles attentions sur :",
+        "content1": "Siamo felicissimi di poter festeggiare con tutti voi questo bellissimo giorno e il nostro dono più grande di avere parenti e amici riuniti.",
+        "content2": "Molti di voi però ci hanno chiesto cosa ci renderebbe ancora più felici. Dopo una bella riflessione ci piacerebbe moltissimo poter scoprire la Tanzania. Tra safari e relax, per iniziare la nostra vita da novelli sposi con le stelle negli occhi.", 
+        "content3": "Se volete contribuire potete inviarci la vostra partecipazione su: ",
         "accountHolder": "Intestatario",
         "iban": "IBAN",
         "swift": "SWIFT",
         "description": "Causale",
-        "content4": "Si vous souhaitez y participer, vous pouvez nous adresser vos gentilles attentions sur :",
-        "thanks": "Grazie di cuore!"
+        "content4": "Vicino al libro dei ricordi, metteremo anche a disposizione una scotola per le buste.",
+        "thanks": "Non vediamo l'ora di vedervi!"
     }
 }
