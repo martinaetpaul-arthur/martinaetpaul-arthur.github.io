@@ -7,6 +7,7 @@
         "giftRegistry": "Liste de noces"
     },
     "home": {
+        "wedding": "Mariage",
         "weddingDirection": "Villa Quintili, Roma, Italie",
         "description": "Il y a six ans, nos chemins se sont croisés à Paris. De cette rencontre nous avons décidé de construire notre histoire, qui nous a menés jusqu'à Barcelone. A présent, une nouvelle étape est arrivée et nous serions heureux de célébrer notre mariage avec vous tous dans la Ville Éternelle.",
         "questions": "Une question? Ecrivez-nous à "
@@ -14,8 +15,8 @@
     "agenda": {
         "weddingDay": "Jour du mariage",
         "weddingDate": "Vendredi 6 septembre 2024",
-        "reception": "Réception",
-        "receptionDescription": "Suivi d'un vin d'honneur et d'un dîner",
+        "reception": "Festivités",
+        "receptionDescription": "Vin d'honneur et dîner",
         "cerimony": "Cérémonie laïque",
         "cerimonyDescription": "Début 17:30 h",
         "direction1": "Villa Quintili",

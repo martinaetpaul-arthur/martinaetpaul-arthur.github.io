@@ -1,10 +1,8 @@
-import { Box, Button, Container, Divider, Grid, Link, Typography } from '@mui/material';
+import { Box, Button, Container, Divider, Grid, Link, Stack, Typography } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Locale } from './Locale';
 
 function Home({ onRsvpClick }) {
-    const locale = React.useContext(Locale);
     const { t } = useTranslation();
 
     return (
@@ -12,8 +10,13 @@ function Home({ onRsvpClick }) {
             <Box margin="auto" maxWidth={600}>
                 <Grid container direction="column" justifyContent="space-between" alignItems="center" rowSpacing={2}>
                     <Grid item>
-                        <Box hidden={locale === 'it'} sx={{ objectFit: 'contain', maxWidth: { xs: 300, sm: 550 } }} component="img" src="/static/love_fr.png" />
-                        <Box hidden={locale !== 'it'} sx={{ objectFit: 'contain', maxWidth: { xs: 300, sm: 550 } }} component="img" src="/static/love_it.png" />
+                        <Stack alignItems='center' paddingTop={2}>
+                            <Box sx={{ display: { xs: 'none', sm: 'block' }, objectFit: 'contain', maxWidth: 250 }} component="img" src="/static/logo.png" />
+                            <Typography textAlign="center" color="primary" variant='h6'>{t('home.wedding')}</Typography>
+                            <Typography textAlign="center" color="primary" variant='h6'>Martina & Paul-Arthur</Typography>
+                            <Typography textAlign="center" color="primary" variant='h6'>06.09.2024</Typography>
+                            <Box sx={{ objectFit: 'contain', maxWidth: { xs: 200, sm: 300 } }} component="img" src="/static/love.png" />
+                        </Stack>
                     </Grid>
                     <Grid item>
                         <Typography textAlign={{ xs: 'justify', sm: 'center' }} variant='h6' paddingBottom={3}>{t('home.description')}</Typography>

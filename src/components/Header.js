@@ -20,7 +20,7 @@ function Header({ pages, home, navigate, changeLocale }) {
         }
     }
 
-    const Logo = ({ clickable }) => (<Box sx={{ height: 64, cursor: clickable ? 'pointer' : 'auto' }} onClick={clickable ? () => navigate(home) : null} component="img" src="/static/logo.png" />);
+    const Logo = ({ clickable }) => (<Box paddingTop={2} sx={{ height: 56, cursor: clickable ? 'pointer' : 'auto' }} onClick={clickable ? () => navigate(home) : null} component="img" src="/static/logo.png" />);
 
     return (
         <Box id="header" component="header" >
