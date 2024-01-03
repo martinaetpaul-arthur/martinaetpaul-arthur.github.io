@@ -8,16 +8,19 @@
     },
     "home": {
         "weddingDirection": "Villa Quintili, Roma, Italie",
+        "description": "Il y a six ans, nos chemins se sont croisés à Paris. De cette rencontre nous avons décidé de construire notre histoire, qui nous a menés jusqu'à Barcelone. A présent, une nouvelle étape est arrivée et nous serions heureux de célébrer notre mariage avec vous tous dans la Ville Éternelle.",
         "questions": "Une question? Ecrivez-nous à "
     },
     "agenda": {
         "weddingDay": "Jour du mariage",
         "weddingDate": "Vendredi 6 septembre 2024",
         "reception": "Réception",
-        "receptionTime": "17h30",
-        "receptionDirection1": "Villa Quintili",
-        "receptionDirection2": "Via Appia Antica, 290",
-        "receptionDirection3": "00178 Roma RM, Italie" 
+        "receptionDescription": "Suivi d'un vin d'honneur et d'un dîner",
+        "cerimony": "Cérémonie laïque",
+        "cerimonyDescription": "Début 17:30 h",
+        "direction1": "Villa Quintili",
+        "direction2": "Via Appia Antica, 290",
+        "direction3": "00178 Roma RM, Italie"
     },
     "hotels": {
         "description1": "A côté de la villa (à noter que la Villa se situe dans un lieu historique - l'accès est donc réglementé)",
